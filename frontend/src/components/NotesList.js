@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 const NotesList = ({
 	handleAddNote,
 	handleDeleteNote,
-  handleEditNote
+  	handleEditNote
 }) => {
 	const [notes, setNotes] = useState([]);
 	useEffect(() => {

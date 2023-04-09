@@ -59,7 +59,7 @@ const App = () => {
 								/> }
 						/>
 					</Routes>
-					</Router>
+				</Router>
 			</div>
 		</div>
 	);
