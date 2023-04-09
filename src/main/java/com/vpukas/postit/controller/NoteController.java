@@ -50,4 +50,9 @@ public class NoteController {
     public void deleteNote(@PathVariable Long noteId) {
         noteService.deleteNote(noteId);
     }
+
+    @GetMapping("{noteId}")
+    public void getNote(@PathVariable Long noteId) {
+        noteService.getNoteById(noteId);
+    }
 }

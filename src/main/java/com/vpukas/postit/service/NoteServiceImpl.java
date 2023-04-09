@@ -35,18 +35,21 @@ public class NoteServiceImpl implements NoteService {
      */
     @Override
     public Note editNote(Note note, Long noteId) {
-        Note searchedNote = noteRepository
-                .findById(noteId)
-                .orElseThrow();
+        Note searchedNote = getNoteById(noteId);
         searchedNote.setContent(note.getContent());
         return noteRepository.save(searchedNote);
     }
 
     @Override
     public void deleteNote(Long noteId) {
-        Note searchedNote = noteRepository
-                .findById(noteId)
-                .orElseThrow(RuntimeException::new);
+        Note searchedNote = getNoteById(noteId);
         noteRepository.delete(searchedNote);
+    }
+
+    @Override
+    public Note getNoteById(Long noteId) {
+        return noteRepository
+                .findById(noteId)
+                .orElseThrow(() -> new RuntimeException("Note not found"));
     }
 }

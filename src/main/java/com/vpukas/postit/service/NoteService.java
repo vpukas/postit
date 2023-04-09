@@ -23,4 +23,6 @@ public interface NoteService {
     Note editNote(Note note, Long noteId);
 
     void deleteNote(Long noteId);
+
+    Note getNoteById(Long noteId);
 }
