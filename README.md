@@ -17,13 +17,13 @@
 
 ## Setup
 1. Prepare PostgreSQL database and change values in application.properties file according to your database and user
-2. Start Spring Boot application in backend directory
+2. Start Spring Boot application in backend directory, port 8080
  ```
    ./mvnw spring-boot:run
     or
     mvn spring-boot:run
   ```
-3. Start React.js application in frontend directory
+3. Start React.js application in frontend directory port 3000
   ```
    npm install
    then
