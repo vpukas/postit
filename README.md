@@ -24,19 +24,15 @@
 2. Start Spring Boot application in backend directory
  ```
    ./mvnw spring-boot:run
-    ```
     or
-     ```
     mvn spring-boot:run
   ```
 3. Start React.js application in frontend directory
   ```
    npm install
-   ```
    then
-   ```
    npm start
-    ```
+   ```
 
 ## Features
 List the ready features here:
