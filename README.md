@@ -1,15 +1,11 @@
 # PostIt Notes
 
 ## Table of Contents
-* [General Info](#general-information)
 * [Technologies Used](#technologies-used)
 * [Setup](#setup)
 * [Features](#features)
 * [Project Status](#project-status)
 * [Contact](#contact)
-
-## General Information
-- The project allows users to log in to the application where they can create campaigns for products they want to sell.
 
 ## Technologies Used
 - React JS - version 18.2
