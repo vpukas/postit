@@ -16,7 +16,7 @@
 - NPM - version 8.10.0
 
 ## Setup
-1. You can run application using Docker: 
+1. You can run application using Docker(frontend 9090, backend 8080): 
    change data in .env file according to your database credentials and in main app directory run
    ```
    docker-compose up --build
