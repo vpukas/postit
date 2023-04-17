@@ -5,9 +5,9 @@ const AddNote = ({ handleAddNote }) => {
 		id: null,
 		content: ""
 	});
-	const characterLimit = 200;
+	const characterLimit = 201;
 
-	
+
 
 	const handleChange = (event) => {
 		if (characterLimit - event.target.value.length >= 0) {
@@ -27,7 +27,7 @@ const AddNote = ({ handleAddNote }) => {
 		const newNote = { ...note };
 		newNote[prop] = value;
 		setNote(newNote);
-	  }
+	}
 
 	return (
 		<div className='note new'>
