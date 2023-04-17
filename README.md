@@ -1,15 +1,11 @@
 # PostIt Notes
 
 ## Table of Contents
-* [General Info](#general-information)
 * [Technologies Used](#technologies-used)
 * [Setup](#setup)
 * [Features](#features)
 * [Project Status](#project-status)
 * [Contact](#contact)
-
-## General Information
-- The project allows users to log in to the application where they can create campaigns for products they want to sell.
 
 ## Technologies Used
 - React JS - version 18.2
@@ -21,13 +17,13 @@
 
 ## Setup
 1. Prepare PostgreSQL database and change values in application.properties file according to your database and user
-2. Start Spring Boot application in backend directory
+2. Start Spring Boot application in backend directory, port 8080
  ```
    ./mvnw spring-boot:run
     or
     mvn spring-boot:run
   ```
-3. Start React.js application in frontend directory
+3. Start React.js application in frontend directory port 3000
   ```
    npm install
    then
