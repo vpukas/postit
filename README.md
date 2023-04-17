@@ -17,7 +17,7 @@
 
 ## Setup
 1. You can run application using Docker: 
-   in main app directoy run
+   change data in .env file according to your database credentias and in main app directoy run
    ```
    docker-compose up --build
    ```
