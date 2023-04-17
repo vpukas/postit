@@ -4,23 +4,25 @@ import { useState, useEffect } from 'react';
 const NotesList = ({
 	handleAddNote,
 	handleDeleteNote,
-  	handleEditNote
+	handleEditNote,
 }) => {
 	const [notes, setNotes] = useState([]);
+
 	useEffect(() => {
-		fetch("api/v1/notes", {
-		  headers: {
-			"Content-Type": "application/json",
-		  },
-		  method: "get",
+		fetch("http://localhost:8080/api/v1/notes", {
+			headers: {
+				"Content-Type": "application/json",
+			},
+			method: "get",
 		})
-		  .then((response) => {
-			if (response.status === 200) return response.json();
-		  })
-		  .then((notesData) => {
-			setNotes(notesData);
-		  });
-	  }, []);
+			.then((response) => {
+				if (response.status === 200) return response.json();
+			})
+			.then((notesData) => {
+
+				setNotes(notesData);
+			});
+	}, []);
 
 	return (
 		<div className='notes-list'>
@@ -29,7 +31,6 @@ const NotesList = ({
 					id={note.id}
 					content={note.content}
 					handleDeleteNote={handleDeleteNote}
-
 				/>
 			))}
 			<AddNote handleAddNote={handleAddNote} />

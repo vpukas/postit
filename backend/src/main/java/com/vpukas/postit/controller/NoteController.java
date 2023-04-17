@@ -21,7 +21,7 @@ import java.util.List;
 @RestController
 @RequestMapping("api/v1/notes")
 @RequiredArgsConstructor
-@CrossOrigin()
+@CrossOrigin
 public class NoteController {
     private final NoteService noteService;
 
